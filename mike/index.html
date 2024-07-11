@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Title section -->
+    <title>Vargas_Portfolio</title>
+    <!-- Font -->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME CSS ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar section-->
+    <section>
+        <nav class="navbar navbar-expand-lg">
+            <!-- container -->
+            <div class="container-fluid px-0">
+                <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-graduation-cap"></i>JMV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="navbar-toggler">
+                    <input type='checkbox' id='toggle-menu' />
+                    <label type="button" class='toggle-btn' for='toggle-menu'>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </label>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <!-- ms-auto -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <a class="nav-link" href="login.php"><button class="btn btn-outline-success" type="submit">Log Out</button></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-graduation-cap"></i>JMV</a>
+                    <div class="modal-body">
+                        <!-- ms-auto -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#home"><i class="fas fa-home"></i> HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#about"><i class="fa-solid fa-user"></i></i> ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#service"><i class="fa-solid fa-user-tag"></i> SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="#contact"><i class="fa-solid fa-user-tag"></i> CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> SIGN UP</a>
+                            </li>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label
+                                for='toggle-menu'>Close</label></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home section-->
+        <div class="row slider" id="home">
+            <div class="col-10 mx-auto">
+                <section class="hidden">
+                    <div class="row">
+                        <section class="col-md-4 slider-image">
+                            <img src="img/00654737.jpg" alt="JMV">
+                        </section>
+                        <section class="col-md-8">
+                            <h3 class="name">I'm John Michael E. Vargas</h3>
+                            <h2 class="future">Future</h2>
+                            <h3 class="job">Software Engineer</h3>
+                            <p class="description">"I am a future software engineer, passionate about developing
+                                user-friendly websites and creating excellent software that can improve people's lives."
+                            </p>
+
+                            <div class="social-media">
+                                <a href="https://www.facebook.com/mchlvargas?mibextid=ZbWKwL" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://twitter.com/mchlvargas?t=r7OQ4zmwyTgD50ii5UYUPA&s=07"
+                                    target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/vmichael28/?igshid=NmQ2ZmYxZjA=" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@michaelv28" target="_blank"><i
+                                        class="fa-brands fa-tiktok"></i></i></a>
+                            </div>
+                        </section>
+                </section>
+            </div>
+        </div>  
+
+    <!-- Hidden Section JS  -->
+    <section class="hidden">
+        <section class="boxes">
+            <div class="container">
+                <div class="content">
+                    <div class="box">
+                        <i class="fas fa-cog"></i>
+                        <h3>Deeper skillset</h3>
+                        <p>"An IT student with a vision to become a software engineer sees technology not just as it is, but as it could be. They are the creators of the future, molding digital solutions that change the world one line of code at a time."</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Creative work</h3>
+                        <p>"As an IT student, I see coding as an art form where I use technology as my paintbrush to
+                            create digital masterpieces that combine creativity and technical skills to develop
+                            innovative solutions."</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-gem"></i>
+                        <h3>Strong Dedication</h3>
+                        <p>"As an IT student, I am deeply passionate about technology and fully dedicated to advancing my knowledge and skills. Through persistent research and study, I aim to stay at the forefront of the dynamic IT industry and make a meaningful contribution to the field".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- home section ends -->
+
+    <!--About Section-->
+    <section id="about-section" class="hidden"> </section>
+
+    <!--Service Section-->
+    <section id="service-section" class="hidden"> </section>
+
+    <!--Contact Section-->
+    <section id="contact-section" class="hidden"> </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright-box">
+                <p class="copyright">&copy; Copyright <span><strong>JMV</strong></span>. All Rights Reserved</p>
+                <div class="credits">
+                  Designed by Vargas, John Michael E. - BSIT 2B
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer><!-- End  Footer -->
+
+    <!--JavaScript Section-->   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js\main.js"></script>
+    
+    <!-- Call loadSection function to load content -->
+    <script>
+    // Load the content of about.html into the About Section
+    loadSection('about-section', 'about.html');
+
+    // Load the content of service.html into the Service Section
+    loadSection('service-section', 'service.html');
+
+    // Load the content of service.html into the Service Section
+    loadSection('contact-section', 'contact.html');
+    </script>
+    </section>
+</body>
+</html>
