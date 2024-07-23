@@ -27,15 +27,29 @@
             }
             return true;
         }
+
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            return true;
+        }
+
+        function validateForm() {
+            return validateEmail() && validatePassword();
+        }
     </script>
 </head>
 <body>
 <div class="container">
         <div class="card">
             <div class="card-body">
-                <i class="fa-sharp fa-solid fa-graduation-cap"></i><h1>JMV</h1><br>
                 <h2 class="card-title">Create an Account</h2>
-                <form action="" method="post" onsubmit="return validatePassword()">
+                <form action="" method="post" onsubmit="return validateForm()">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" name="name" id="name" required>
